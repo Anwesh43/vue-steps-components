@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="app">
+           <divbl v-for = "a in ar" :i = "a">
+            </divbl>
+        </div>
+        <script src="https://unpkg.com/vue@2.6.10/dist/vue.js">
+        </script>
+        <script id = "blockdiv" type = "x-template/html">
+            <div class = "block" :style = "{transform:`rotateZ(${rot}deg)`, left : `${i * 100}px`, top : `${i * 100}px`}" @click="startRot">
+            </div>
+        </script>
+        <script src="index.js">
+        </script>
+    </body>
+</html>
